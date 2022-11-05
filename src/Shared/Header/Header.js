@@ -20,7 +20,10 @@ const Header = () => {
                 </Col>
                 <Col lg={6} className="header_right">
                     <ul className="nav_items">
-                        <li><Bell/></li>
+                        <li>
+                            <Bell/>
+                            <span className="counter">3</span>
+                        </li>
                         <li><Settings/></li>
                         <li><User/></li>
                     </ul>

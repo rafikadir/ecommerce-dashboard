@@ -59,6 +59,28 @@
                 li {
                     list-style: none;
                     display: inline-block;
+                    padding: 5px 10px;
+                    position: relative;
+                    margin-right: 5px;
+
+                    .counter {
+                        position: absolute;
+                        background: $orange-color;
+                        color: $white-color;
+                        width: 15px;
+                        height: 15px;
+                        line-height: 15px;
+                        text-align: center;
+                        border-radius: 25px;
+                        font-size: 12px;
+                        font-weight: 700;
+                        right: 5px;
+                        top: 0px;
+                    }
+
+                    svg {
+                        width: 22px;
+                    }
                 }
             }
         }
