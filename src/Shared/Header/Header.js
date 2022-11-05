@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Container, Col, Form, FormGroup, FormControl} from 'react-bootstrap';
+import { Row, Container, Col, FormControl} from 'react-bootstrap';
 import { Bell, Grid, Search, Settings, User } from 'react-feather';
 import './Header.scss';
 
@@ -9,15 +9,13 @@ const Header = () => {
            <Row className="header_wrapper">
                 <Col lg={6} className="header_left">
                     <div className="sidebar_toggle">
-                        <Grid/>
+                        <button>
+                            <Grid/>
+                        </button>
                     </div>
                     <div className="header_search">
-                        <Form>
-                            <FormGroup>
-                                <Search/>
-                                <FormControl></FormControl>
-                            </FormGroup>
-                        </Form>
+                        <Search className="search_icon"/>
+                        <FormControl placeholder="Search here.."></FormControl>
                     </div>
                 </Col>
                 <Col lg={6} className="header_right">

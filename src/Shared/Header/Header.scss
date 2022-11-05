@@ -1,12 +1,51 @@
+@import '../../Sass//Colors.scss';
+
 .page_header {
+    margin-left: 280px !important;
+    width: calc(100% - 280px) !important;
+    background: $white-color;
+
     .header_wrapper {
-        margin-left: 280px;
-        width: calc(100% - 280px);
         align-items: center;
+        padding: 15px 30px;
 
         .header_left {
             display: flex;
             align-items: center;
+
+            .sidebar_toggle {
+                button {
+                    margin: 10px 15px;
+                    background: none;
+                    border: none;
+                }
+            }
+            
+            .header_search {
+                width: 100%;
+                position: relative;  
+                border: 1px solid #dee5ff;
+                padding-left: 20px;
+                border-radius: 25px;
+
+                    .search_icon {
+                        position: absolute;
+                        top: 10px;
+                        left: 15px;
+                    }
+
+                    .form-control {
+                        border-radius: 25px;
+                        padding: 10px;
+                        border: unset;
+                        padding-left: 30px;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                
+            }
         }
 
         .header_right {
