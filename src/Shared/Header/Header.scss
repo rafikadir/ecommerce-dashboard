@@ -1,0 +1,27 @@
+.page_header {
+    .header_wrapper {
+        margin-left: 280px;
+        width: calc(100% - 280px);
+        align-items: center;
+
+        .header_left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header_right {
+            display: flex;
+            justify-content: end;
+
+            .nav_items {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
