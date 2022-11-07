@@ -7,7 +7,9 @@ import './Layout.scss';
 const Layout = () => {
     return (
         <Container fluid>
-            <Sidebar/>
+            <div className='sidebar_area'>
+                <Sidebar/>
+            </div>
             <div className="content_area">
                 <Header/> 
             </div>

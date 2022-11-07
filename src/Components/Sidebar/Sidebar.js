@@ -5,8 +5,8 @@ import nav from '../../Nav';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
-    return (
-        <div className='sidebar_area'>
+    return (    
+        <>
             <div className="sidebar_logo">
                 <img src={logo} alt="logo" />
             </div>
@@ -23,7 +23,7 @@ const Sidebar = () => {
                     }
                 </ul>
             </div>
-        </div>
+        </>
     );
 };
 

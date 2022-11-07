@@ -5,16 +5,12 @@ import './Header.scss';
 
 const Header = () => {
 
-    const handleSidebar = () => {
-        console.log("click")
-    }
-
     return (
         <Container className="page_header" fluid>
            <Row className="header_wrapper">
                 <Col lg={6} className="header_left">
                     <div className="sidebar_toggle">
-                        <button onClick={handleSidebar}>
+                        <button>
                             <Grid/>
                         </button>
                     </div>
