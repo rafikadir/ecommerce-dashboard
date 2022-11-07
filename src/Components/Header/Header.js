@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { createContext } from 'react';
+import { useState } from 'react';
 import { Row, Container, Col, FormControl} from 'react-bootstrap';
 import { Bell, Grid, Search, Settings, User } from 'react-feather';
 import './Header.scss';
 
+export const ToggleContext = createContext();
+
 const Header = () => {
 
+    const [isToggle, setIsToggle] = useState(false);
+    const handleToggle = () => {
+        setIsToggle(true);
+    }
+
     return (
+        <ToggleContext.Provider value="Rafi">
         <Container className="page_header" fluid>
            <Row className="header_wrapper">
                 <Col lg={6} className="header_left">
                     <div className="sidebar_toggle">
-                        <button>
+                        <button onClick={handleToggle}>
                             <Grid/>
                         </button>
                     </div>
@@ -31,6 +40,7 @@ const Header = () => {
                 </Col>
            </Row>
         </Container>
+        </ToggleContext.Provider>
     );
 };
 
