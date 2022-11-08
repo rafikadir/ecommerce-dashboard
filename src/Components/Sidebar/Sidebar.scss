@@ -6,6 +6,11 @@
     left: 0;
     height: 100vh;
     background: $white-color;
+    transition: .5s all ease-in-out;
+
+    &.close {
+        left: -285px;
+    }
 
     .sidebar_logo {
         padding: 20px 30px;

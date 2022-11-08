@@ -4,9 +4,9 @@ import logo from './../../Assets/Img/logo.svg';
 import nav from '../../Nav';
 import { Link } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({open}) => {
     return (    
-        <>
+        <div className={open? 'sidebar_area' : 'sidebar_area close'}>
             <div className="sidebar_logo">
                 <img src={logo} alt="logo" />
             </div>
@@ -23,7 +23,7 @@ const Sidebar = () => {
                     }
                 </ul>
             </div>
-        </>
+            </div>
     );
 };
 
