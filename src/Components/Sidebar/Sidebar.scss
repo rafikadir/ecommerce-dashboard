@@ -25,15 +25,16 @@
 
             li {
                 list-style-type: none;
+                position: relative;
 
                 a {
                     display: block;
-                    padding: 10px;
-                    color: $black-color; 
+                    padding: 10px 10px 8px;
+                    color: #2c323f; 
                     text-decoration: none;
-                    border-radius: 10px;
+                    border-radius: 8px;
                     transition: .3s;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: 500;
                     letter-spacing: 1px;
 
@@ -46,7 +47,6 @@
 
                     &:hover {
                         background: rgb(245, 245, 255);
-                        color: $blue-color;
                     }
                 }
             }

@@ -23,7 +23,7 @@ const Sidebar = ({open}) => {
                     }
                 </ul>
             </div>
-            </div>
+        </div>
     );
 };
 

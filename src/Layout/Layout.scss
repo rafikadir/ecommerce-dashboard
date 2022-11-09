@@ -2,8 +2,9 @@
 
 .content_area {
     margin-left: 280px;
+    transition: .5s all ease-in-out;
 
-    .closed {
-        margin-left: 0;
+    &.close {
+        margin-left: 0px;
     }
 }

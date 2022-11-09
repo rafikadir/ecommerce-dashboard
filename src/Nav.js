@@ -1,15 +1,15 @@
-import { Headphones, Home, Package, ShoppingBag, User } from "react-feather";
+import { Activity, Headphones, Home, Package, ShoppingCart, User } from "react-feather";
 
 const nav = [
     {
         'name': 'Dashboard',
         'to': '/',
-        'icon': <Home/>
+        'icon': <Activity/>
     },
     {
         'name': 'Orders',
         'to': '/',
-        'icon': <ShoppingBag/>
+        'icon': <ShoppingCart/>,
     },
     {
         'name': 'Products',
