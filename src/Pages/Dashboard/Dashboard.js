@@ -1,8 +1,11 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import DataCard from '../../Components/DataCard/DataCard';
+import DataChart from '../../Components/DataChart/DataChart';
+import DataPie from '../../Components/DataPie/DataPie';
 import PageTitle from '../../Components/PageTitle/PageTitle';
-import dashboardData from '../../data';
+import dashboardData from '../../Data/data';
+import './Dashboard.scss';
 
 const Dashboard = () => {
     return (
@@ -14,6 +17,29 @@ const Dashboard = () => {
                         <DataCard data={data} />
                     </Col>)
                 }
+
+                <Col lg={6}>
+                    <div className="order_data_chart">
+                        <div className="order_chart_top">
+                            <p>Recent Order Details</p>
+
+                            <div className="select_date">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Today</option>
+                                    <option value="1">Last Week</option>
+                                    <option value="2">Last Quarter</option>
+                                    <option value="3">Last Month</option>
+                                </select>
+                            </div>
+                        </div>
+                        <DataChart/>
+                    </div>
+                </Col>
+                <Col lg={3}>
+                    <div className="categories_area">
+                        <DataPie />
+                    </div>
+                </Col>
             </Row>
         </Container>
     );
