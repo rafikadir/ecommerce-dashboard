@@ -75,20 +75,3 @@
         }
     }
 }
-
-.country_bar {
-    padding: 20px;
-    border-radius: 20px;
-    background: $white-color;
-    text-align: center;
-
-    .country_bar_top {
-        h4 {
-            color: $navy-color;
-            margin-bottom: 15px;
-            text-transform: capitalize;
-            font-size: 22px;
-            font-weight: 500;
-        }
-    }
-}

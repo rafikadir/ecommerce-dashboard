@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import DataBar from '../../Components/DataBar/DataBar';
 import DataCard from '../../Components/DataCard/DataCard';
 import DataChart from '../../Components/DataChart/DataChart';
 import DataPie from '../../Components/DataPie/DataPie';
@@ -63,13 +62,7 @@ const Dashboard = () => {
                     </div>
                 </Col>
                 <Col lg={3}>
-                    <div className="country_bar">
-                        <div className="country_bar_top">
-                            <h4>Top Countries</h4>
-                        </div>
-
-                        <DataBar/>
-                    </div>
+                    
                 </Col>
             </Row>
         </Container>
