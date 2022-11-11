@@ -1,10 +1,10 @@
 const data = [
-    { name: "Group A", value: 400 },
-    { name: "Group B", value: 300 },
-    { name: "Group C", value: 300 },
-    { name: "Group D", value: 200 }
+    { name: "Shoes", value: 400 },
+    { name: "Shirts", value: 300 },
+    { name: "Hodies", value: 350 },
+    { name: "Pants", value: 250 }
 ];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
+const COLORS = ["#6362e7", "#8f97b2", "#FFBB28", "#FF8042"];
 const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({
     cx,
@@ -14,7 +14,7 @@ const renderCustomizedLabel = ({
     outerRadius,
     percent,
     index
-  }: any) => {
+  },) => {
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
     const x = cx + radius * Math.cos(-midAngle * RADIAN);
     const y = cy + radius * Math.sin(-midAngle * RADIAN);

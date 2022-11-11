@@ -1,0 +1,11 @@
+.data_pie {
+    .recharts-wrapper {
+        width: unset !important;
+        height: unset !important;
+    
+        .recharts-surface {
+            max-width: 300px !important;
+            height: inherit !important;
+        }
+    }
+}

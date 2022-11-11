@@ -1,13 +1,14 @@
 @import '../../Sass//Colors.scss';
 
 .page_title {
-    background: $white-color;
-    margin: 5px 0 10px;
+    margin: 5px 0 20px;
     padding: 15px;
 
     h2 {
         font-size: 24px;
         line-height: 1;
         margin-bottom: 0;
+        color: $navy-color;
+        font-weight: 600;
     }
 }
