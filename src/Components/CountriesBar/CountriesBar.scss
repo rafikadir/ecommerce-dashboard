@@ -1,0 +1,11 @@
+@import "../../Sass/Colors.scss";
+
+.single_country {
+    margin-bottom: 15px;
+
+    span {
+        font-size: 12px;
+        font-weight: 500;
+        color: $gray-color;
+    }
+}

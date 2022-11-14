@@ -4,7 +4,8 @@
     padding: 20px;
     border-radius: 20px;
     background: $white-color;
-    overflow:auto ;
+    overflow:auto;
+    margin-bottom: 20px;
 
     .order_chart_top {
         display: flex;
@@ -72,6 +73,22 @@
             .bg_four {
                 background: $gray-color;
             }
+        }
+    }
+}
+
+.countries_bar {
+    padding: 20px;
+    border-radius: 20px;
+    background: $white-color;
+
+    .countries_bar_top {
+        h4 {
+            color: $navy-color;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            font-size: 22px;
+            font-weight: 500;
         }
     }
 }

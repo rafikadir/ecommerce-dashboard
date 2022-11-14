@@ -27,6 +27,7 @@ const dashboardData = [
         'ammount': 35,
         'icon': <Box/>,
     }
-]
+];
+
 
 export default dashboardData;

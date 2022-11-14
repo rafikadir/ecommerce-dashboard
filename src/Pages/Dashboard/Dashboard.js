@@ -1,13 +1,40 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import CountriesBar from '../../Components/CountriesBar/CountriesBar';
 import DataCard from '../../Components/DataCard/DataCard';
 import DataChart from '../../Components/DataChart/DataChart';
 import DataPie from '../../Components/DataPie/DataPie';
+import Order from '../../Components/Order/Order';
 import PageTitle from '../../Components/PageTitle/PageTitle';
+import TopProduct from '../../Components/TopProduct/TopProduct';
 import dashboardData from '../../Data/data';
 import './Dashboard.scss';
 
 const Dashboard = () => {
+
+    const countriesData = [
+        {
+            'name': 'USA',
+            'ammount': '50'
+        },
+        {
+            'name': 'German',
+            'ammount': '60'
+        },
+        {
+            'name': 'India',
+            'ammount': '80'
+        },
+        {
+            'name': 'Canada',
+            'ammount': '45'
+        },
+        {
+            'name': 'France',
+            'ammount': '65'
+        }
+    ]
+
     return (
         <Container className="p-3" fluid>
             <PageTitle title="Dashboard"/>
@@ -62,7 +89,23 @@ const Dashboard = () => {
                     </div>
                 </Col>
                 <Col lg={3}>
-                    
+                    <div className="countries_bar">
+                        <div className="countries_bar_top">
+                            <h4>Top Countries</h4>
+                        </div>
+
+                        <div className="country_list">
+                            {
+                                countriesData.map(country => <CountriesBar name={country.name} ammount={country.ammount}/>)
+                            }
+                        </div>
+                    </div>
+                </Col>
+                <Col lg={6}>
+                    <Order/>
+                </Col>
+                <Col lg={6}>
+                    <TopProduct />
                 </Col>
             </Row>
         </Container>

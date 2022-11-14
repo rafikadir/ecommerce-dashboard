@@ -1,0 +1,40 @@
+@import '../../Sass/Colors.scss';
+
+
+.order_table {
+    padding: 20px;
+    border-radius: 20px;
+    background: $white-color;
+    overflow:auto;
+
+    h4 {
+        color: $navy-color;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    table {
+        thead {
+            background-color: #f4f6fd;
+        }
+
+        .order_status {
+            font-size: 12px;
+            display: inline-block;
+            padding: 2px 4px;
+            border-radius: 5px;
+
+            &.done {
+                background: $orange-color;
+            }
+            &.pending {
+                background: $gray-color;
+            }
+            &.rejected {
+                background: red;
+            }
+        }
+    }
+}
