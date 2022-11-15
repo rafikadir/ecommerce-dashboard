@@ -5,6 +5,8 @@ import Header from '../Components/Header/Header';
 import './Layout.scss';
 import { useState } from 'react';
 import Dashboard from '../Pages/Dashboard/Dashboard';
+import { Route, Routes } from 'react-router-dom';
+import OrderPage from '../Pages/OrderPage/OrderPage';
 
 const Layout = () => {
 
@@ -19,7 +21,11 @@ const Layout = () => {
             <div className={open ? "content_area" : "content_area close"}>
                 <Header handleToggle={handleToggle}/>
                        
-                <Dashboard />          
+                <Routes>
+                    <Route path="/" element={<Dashboard />}/>
+                    <Route path="/orders" element={<OrderPage />}/>
+                </Routes>
+                        
             </div>
         </Container>
     );

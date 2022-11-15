@@ -5,7 +5,7 @@ import data from '../../Data/TopProducts';
 
 const TopProduct = () => {
     return (
-        <div className="order_table">
+        <div className="top_product">
         <h4>Top Products</h4>
         <Table>
             <thead>

@@ -3,27 +3,27 @@ import { Activity, Headphones, Package, ShoppingCart, User } from "react-feather
 const nav = [
     {
         'name': 'Dashboard',
-        'to': '/',
+        'link': '/',
         'icon': <Activity/>
     },
     {
         'name': 'Orders',
-        'to': '/',
+        'link': '/orders',
         'icon': <ShoppingCart/>,
     },
     {
         'name': 'Products',
-        'to': '/',
+        'link': '/products',
         'icon': <Package/>
     },
     {
-        'name': 'Users',
-        'to': '/',
+        'name': 'Customers',
+        'link': '/customers',
         'icon': <User/>
     },
     {
         'name': 'Support',
-        'to': '/',
+        'link': '/support',
         'icon': <Headphones/>
     }
 ]

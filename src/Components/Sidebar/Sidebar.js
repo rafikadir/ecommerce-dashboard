@@ -10,6 +10,7 @@ const Sidebar = ({open}) => {
             <div className="sidebar_logo">
                 <img src={logo} alt="logo" />
             </div>
+
             <div className="sidebar_menu">
                 <ul>
                     {

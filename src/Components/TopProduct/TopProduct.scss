@@ -1,9 +1,9 @@
 @import '../../Sass/Colors.scss';
 
 
-.order_table {
+.top_product{
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: $white-color;
     overflow:auto;
 
@@ -19,22 +19,9 @@
         thead {
             background-color: #f4f6fd;
         }
-
-        .order_status {
-            font-size: 12px;
-            display: inline-block;
-            padding: 2px 4px;
-            border-radius: 5px;
-
-            &.done {
-                background: $orange-color;
-            }
-            &.pending {
-                background: $gray-color;
-            }
-            &.rejected {
-                background: red;
-            }
-        }
+    }
+    
+    tr {
+        border-color: #f3efef;
     }
 }
