@@ -1,14 +1,12 @@
 @import '../../Sass/Colors.scss';
 
-.product_card {
+.product_table {
     padding: 20px;
     background: $white-color;
     border-radius: 8px;
     margin-bottom: 20px;
     
     .product_img {
-        img {
-            max-width: 100%;
-        }
+        max-width: 25px;
     }
 }

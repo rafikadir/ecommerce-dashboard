@@ -12,20 +12,12 @@ const Products = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     }, [])
-    console.log(products);
 
     return (
         <Container className="p-3" fluid>
             <PageTitle title="Products"/>
 
-            <Row>
-                {
-                    products.map((product) =>
-                        <Col lg={3}>
-                            <ProductCard product={product}/>
-                        </Col>)
-                }
-            </Row>
+            <ProductCard products={products}/>
         </Container>
     );
 };
