@@ -7,6 +7,7 @@ import { useState } from 'react';
 import Dashboard from '../Pages/Dashboard/Dashboard';
 import { Route, Routes } from 'react-router-dom';
 import OrderPage from '../Pages/OrderPage/OrderPage';
+import Products from '../Pages/Products/Products';
 
 const Layout = () => {
 
@@ -24,6 +25,7 @@ const Layout = () => {
                 <Routes>
                     <Route path="/" element={<Dashboard />}/>
                     <Route path="/orders" element={<OrderPage />}/>
+                    <Route path="/products" element={<Products />}/>
                 </Routes>
                         
             </div>

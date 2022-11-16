@@ -29,5 +29,4 @@ const dashboardData = [
     }
 ];
 
-
 export default dashboardData;

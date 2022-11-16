@@ -33,7 +33,7 @@ const Dashboard = () => {
             'name': 'France',
             'ammount': '65'
         }
-    ]
+    ];
 
     return (
         <Container className="p-3" fluid>
