@@ -8,6 +8,7 @@ import Dashboard from '../Pages/Dashboard/Dashboard';
 import { Route, Routes } from 'react-router-dom';
 import OrderPage from '../Pages/OrderPage/OrderPage';
 import Products from '../Pages/Products/Products';
+import Customers from '../Pages/Customers/Customers';
 
 const Layout = () => {
 
@@ -26,6 +27,7 @@ const Layout = () => {
                     <Route path="/" element={<Dashboard />}/>
                     <Route path="/orders" element={<OrderPage />}/>
                     <Route path="/products" element={<Products />}/>
+                    <Route path="/customers" element={<Customers />}/>
                 </Routes>                        
             </div>
         </Container>

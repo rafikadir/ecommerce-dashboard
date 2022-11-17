@@ -18,7 +18,7 @@ const TopProduct = () => {
             </thead>
             <tbody>
                 {
-                    data.map(singleData => <tr>
+                    data.map(singleData => <tr key={singleData.name}>
                             <td>{singleData.name}</td>
                             <td>{singleData.location}</td>
                             <td>{singleData.orders}</td>

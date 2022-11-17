@@ -3,9 +3,8 @@ import './ProductCard.scss';
 import {Table} from 'react-bootstrap';
 
 const ProductCard = (props) => {
-
+    
     const products = props.products;
-
     return (
         <div className="product_table">
            <Table>
@@ -16,19 +15,18 @@ const ProductCard = (props) => {
                         <th>Name</th>
                         <th>Price</th>
                         <th>Category</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {
-                        products.map((product) => <tr>
-                            <td>{product.id}</td>
-                            <td><img className="product_img" src={product.image} alt={product.title}/></td>
-                            <td>{product.title}</td>
-                            <td>{product.price}</td>
-                            <td>{product.category}</td>
-                        </tr>)
-                    }
+                        {
+                            products?.map((product) => <tr>
+                                <td>{product.id}</td>
+                                <td><img className="product_img" src={product.image} alt={product.title}/></td>
+                                <td>{product.title}</td>
+                                <td>{product.price}</td>
+                                <td>{product.category}</td>
+                            </tr>)
+                        }
                 </tbody>
             </Table>
         </div>
