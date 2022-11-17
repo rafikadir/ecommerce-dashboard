@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import {useState, useEffect } from 'react';
+import {Container} from 'react-bootstrap';
 import PageTitle from '../../Components/PageTitle/PageTitle';
 import ProductCard from '../../Components/ProductCard/ProductCard';
 

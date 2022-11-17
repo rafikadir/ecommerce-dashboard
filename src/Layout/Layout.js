@@ -26,8 +26,7 @@ const Layout = () => {
                     <Route path="/" element={<Dashboard />}/>
                     <Route path="/orders" element={<OrderPage />}/>
                     <Route path="/products" element={<Products />}/>
-                </Routes>
-                        
+                </Routes>                        
             </div>
         </Container>
     );

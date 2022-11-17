@@ -27,7 +27,6 @@ const ProductCard = (props) => {
                             <td>{product.title}</td>
                             <td>{product.price}</td>
                             <td>{product.category}</td>
-                            <td></td>
                         </tr>)
                     }
                 </tbody>
