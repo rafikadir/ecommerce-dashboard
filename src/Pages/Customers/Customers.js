@@ -13,7 +13,7 @@ const Customers = () => {
 
             <Row>
                 {
-                    customersData.map(customer => <Col log={3}>
+                    customersData.map(customer => <Col lg={3}>
                         <DataCard data={customer}/>
                     </Col> )   
                 }

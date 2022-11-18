@@ -1,4 +1,4 @@
-import { Activity, Headphones, Package, ShoppingCart, User } from "react-feather";
+import { Activity, Bell, MessageSquare, Package, ShoppingCart, User } from "react-feather";
 
 const nav = [
     {
@@ -22,9 +22,14 @@ const nav = [
         'icon': <User/>
     },
     {
-        'name': 'Support',
-        'link': '/support',
-        'icon': <Headphones/>
+        'name': 'Notifications',
+        'link': '/notification',
+        'icon': <Bell/>
+    },
+    {
+        'name': 'Messages',
+        'link': '/messages',
+        'icon': <MessageSquare/>
     }
 ]
 

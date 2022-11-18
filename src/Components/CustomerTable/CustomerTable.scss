@@ -1,13 +1,23 @@
 @import '../../Sass/Colors.scss';
 
 .customer_table {
-    background: $white-color;
-    padding: 10px 0;
-
     table {
+        background: $white-color;
+        padding: 10px 0;
+
         thead {
-            background: $blue-color;
+            background: $gray-color;
             color: $white-color;
+
+            th {
+                padding: 7px 25px;
+            }
+        }
+
+        tbody {
+            td {
+                padding: 7px 25px;
+            }
         }
     }
 }
