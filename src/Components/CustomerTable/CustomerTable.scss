@@ -6,17 +6,42 @@
         padding: 10px 0;
 
         thead {
-            background: $gray-color;
-            color: $white-color;
+            background: rgba(127, 17, 224, 0.1);
+            color: $navy-color;
 
             th {
-                padding: 7px 25px;
+                padding: 15px 25px;
             }
         }
 
         tbody {
             td {
-                padding: 7px 25px;
+                padding: 10px 25px;
+
+                .action_btn {
+                    padding: 0;
+                    background: none;
+                    border: 0;
+                    margin: 0 4px;
+                    
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.delete_alert {
+    .modal-content {
+        .modal-body {
+            text-align: center;
+
+            svg {
+                width: 70px;
+                height: 70px;
+                color: red;
             }
         }
     }
