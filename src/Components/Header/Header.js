@@ -1,6 +1,7 @@
 import React, { createContext } from 'react';
-import { Row, Container, Col, FormControl} from 'react-bootstrap';
+import { Row, Container, Col, FormControl, Dropdown} from 'react-bootstrap';
 import { Bell, Grid, Search, Settings, User } from 'react-feather';
+import { Link } from 'react-router-dom';
 import './Header.scss';
 
 export const ToggleContext = createContext();
@@ -23,11 +24,35 @@ const Header = ({handleToggle}) => {
                 <Col lg={6} className="header_right">
                     <ul className="nav_items">
                         <li>
-                            <Bell/>
-                            <span className="counter">3</span>
+                            <Settings/>
                         </li>
-                        <li><Settings/></li>
-                        <li><User/></li>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle id="dropdown-basic">
+                                    <Bell/>
+                                    <span className="counter">3</span>
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Notification</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Notification</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Notification</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </li>
+                        <li>
+                            <Dropdown>
+                                <Dropdown.Toggle id="dropdown-basic">
+                                    <User/>
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Log In</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        </li>
                     </ul>
                 </Col>
            </Row>

@@ -21,16 +21,6 @@ const nav = [
         'link': '/customers',
         'icon': <User/>
     },
-    {
-        'name': 'Notifications',
-        'link': '/notification',
-        'icon': <Bell/>
-    },
-    {
-        'name': 'Messages',
-        'link': '/messages',
-        'icon': <MessageSquare/>
-    }
 ]
 
 export default nav;
