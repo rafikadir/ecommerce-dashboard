@@ -7,6 +7,7 @@
     height: 100vh;
     background: $white-color;
     transition: .5s all ease-in-out;
+    z-index: 999999;
 
     &.close {
         left: -285px;
@@ -14,6 +15,22 @@
 
     .sidebar_logo {
         padding: 20px 30px;
+        position: relative;
+
+        .close_icon {
+            position: absolute;
+            top: 35%;
+            right: -10px;
+            background: $white-color;
+            box-shadow: 0 3px 5px 0px $gray-color;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: none;
+        }
     }
 
     .sidebar_menu {
@@ -49,6 +66,23 @@
                         background: rgb(245, 245, 255);
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .sidebar_area {
+        display: none;
+
+        &.close {
+            left: 0;
+            display: block;
+        }
+
+        .sidebar_logo {
+            .close_icon {
+                display: block;
             }
         }
     }

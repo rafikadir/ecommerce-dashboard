@@ -8,3 +8,9 @@
         margin-left: 0px;
     }
 }
+
+@media (max-width: 575px) {
+    .content_area {
+        margin-left: 0;
+    }
+}
