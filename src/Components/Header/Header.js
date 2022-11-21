@@ -34,9 +34,9 @@ const Header = ({handleToggle}) => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Notification</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Notification</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Notification</Dropdown.Item>
+                                    <Dropdown.Item href="#">Notification</Dropdown.Item>
+                                    <Dropdown.Item href="#">Notification</Dropdown.Item>
+                                    <Dropdown.Item href="#">Notification</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
@@ -47,9 +47,9 @@ const Header = ({handleToggle}) => {
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">My Account</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Log In</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">Settings</Dropdown.Item>
+                                    <Dropdown.Item href="#">My Account</Dropdown.Item>
+                                    <Dropdown.Item href="#">Log In</Dropdown.Item>
+                                    <Dropdown.Item href="#">Settings</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
