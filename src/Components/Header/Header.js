@@ -1,7 +1,6 @@
 import React, { createContext } from 'react';
 import { Row, Container, Col, FormControl, Dropdown} from 'react-bootstrap';
-import { Bell, Grid, Search, Settings, User } from 'react-feather';
-import { Link } from 'react-router-dom';
+import { Bell, Grid, Moon, Search,User } from 'react-feather';
 import './Header.scss';
 
 export const ToggleContext = createContext();
@@ -24,7 +23,7 @@ const Header = ({handleToggle}) => {
                 <Col lg={6} className="header_right">
                     <ul className="nav_items">
                         <li>
-                            <Settings/>
+                            <Moon/>
                         </li>
                         <li>
                             <Dropdown>

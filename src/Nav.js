@@ -1,4 +1,4 @@
-import { Activity, Bell, MessageSquare, Package, ShoppingCart, User } from "react-feather";
+import { Activity, Package, ShoppingCart, User } from "react-feather";
 
 const nav = [
     {
