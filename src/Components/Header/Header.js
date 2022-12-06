@@ -47,8 +47,8 @@ const Header = ({handleToggle}) => {
 
                                 <Dropdown.Menu>
                                     <Dropdown.Item href="#">My Account</Dropdown.Item>
-                                    <Dropdown.Item href="#">Log In</Dropdown.Item>
                                     <Dropdown.Item href="#">Settings</Dropdown.Item>
+                                    <Dropdown.Item href="#">Log Out</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </li>
